@@ -1,6 +1,5 @@
 import React, {useContext} from "react";
 import { ScoreContext } from "../Contexts/ScoreContext";
-import Infoboard from "../Components/Infoboard";
 
 export default function Scoreboard() {
     const tasks = useContext(ScoreContext)
@@ -12,7 +11,6 @@ export default function Scoreboard() {
         <button onClick={tasks.plusScore}>+</button>
         <button onClick={tasks.minusScore}>-</button>
       </div>
-      <Infoboard/>
     </div>
   );
 }
